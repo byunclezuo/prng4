@@ -44,4 +44,7 @@ function prng_newstate() {
 // An array of bytes the size of the pool will be passed to init()
 var rng_psize = 256;
 
-module.exports = prng_newstate;
+module.exports = {
+  prng_newstate : prng_newstate,
+  rng_psize : rng_psize
+}
